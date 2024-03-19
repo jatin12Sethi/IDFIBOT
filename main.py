@@ -14,8 +14,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Set this to your React app's URL in a production environment
     allow_credentials=True,
-    app.add_middleware(),
-    # allow_methods=["*"],
+
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 

@@ -13,8 +13,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-app.add_middle
-"*"],  # Set this to your frontend app's URL in a production environment
+app.add_middle=["*"],  # Set this to your frontend app's URL in a production environment
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

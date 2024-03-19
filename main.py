@@ -4,7 +4,7 @@ import os
 # from embedchain import App
 from fastapi import FastAPI
 from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware as CORSMiddleware
 from pydantic import BaseModel
 from openai import OpenAI
 from time import sleep

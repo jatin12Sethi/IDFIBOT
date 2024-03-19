@@ -12,10 +12,10 @@ import uvicorn
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-app.add_middle=["*"],  # Set this to your frontend app's URL in a production environment
+    allow_origins=["*"],  # Set this to your React app's URL in a production environment
     allow_credentials=True,
-    allow_methods=["*"],
+    app.add_middleware(),
+    # allow_methods=["*"],
     allow_headers=["*"],
 )
 

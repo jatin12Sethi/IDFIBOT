@@ -4,7 +4,7 @@ import os
 # from embedchain import App
 from fastapi import FastAPI
 from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware as CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from openai import OpenAI
 from time import sleep
@@ -12,9 +12,8 @@ import uvicorn
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],  # Set this to your React app's URL in a production environment
+    allow_origins=["*"],  # Set this to your React app's URL in a production environment
     allow_credentials=True,
-
     allow_methods=["*"],
     allow_headers=["*"],
 )
